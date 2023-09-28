@@ -8,7 +8,7 @@ const AllTables = () => {
     return (
       <Row className='py-4'>
         {tables.map(table => (
-          <TableCard key={table.id} {...table}  />
+          <TableCard key={table.id} table={table}  />
         ))}
       </Row>
     );
