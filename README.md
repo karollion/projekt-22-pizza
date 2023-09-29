@@ -7,4 +7,4 @@ Install the required packages with the command `yarn install` (or `npm install`)
 
 Run project with the command `yarn start` (or `npm start`).
 
-Project page: [Waiter App]()
+Project page: [Waiter App](https://projekt-22-pizza--karollion.repl.co/)
