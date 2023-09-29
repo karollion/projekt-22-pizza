@@ -1,6 +1,7 @@
 import { Form, Col, Button } from "react-bootstrap";
 import { useState, useEffect } from 'react';
 import { useForm } from "react-hook-form";
+import PropTypes from 'prop-types'
 
 const TableForm = ({ action, actionText, ...props }) => {
 
@@ -102,5 +103,15 @@ const TableForm = ({ action, actionText, ...props }) => {
     </Form>
   );
 };
+
+TableForm.propTypes = {
+	action: PropTypes.func.isRequired,
+	actionText: PropTypes.string.isRequired,
+	status: PropTypes.string,
+	id: PropTypes.string,
+	maxPeople: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	people: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+	bill: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+}
 
 export default TableForm;
